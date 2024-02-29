@@ -1,8 +1,14 @@
-# gillian-portfolio
+# Honors Portfolio
 
 This is the Svelte app powering Gillian's UW Honors portfolio.
 
 ## Editing the website
+
+### Adding images
+
+`<img>` tags have a `src` field that points to the image source. This can be a URL to an online image, or it can be a path to a local image. In the local case, add the image to the `static/images` folder and add the field `src="{base}/images/file.jpg"` to the `<img>` tag.
+
+Note that `{base}` is a Svelte variable that stores the base path of the website, so it works the same on a local dev server or the deployed site.
 
 ### Pages
 
