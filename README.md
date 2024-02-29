@@ -93,7 +93,11 @@ These components create columns in which content can be placed. First, add a `<C
 
 #### `<GraphicNav>` and `<GraphicNavItem>`
 
-These components create the grid-like "album" navigation menu. Each `<GraphicNavItem>` inside the `<GraphicNav>` container will render a circular element in the grid. HTML content inside the `<GraphicNavItem>` will be centered inside the circle. The content will most likely be an image link, as shown in the example.
+These components create the grid-like "album" navigation menu. Each `<GraphicNavItem>` inside the `<GraphicNav>` container will render a circular element in the grid. HTML content inside the `<GraphicNavItem>` will be centered inside the circle. The content will most likely be an image, as shown in the example.
+
+**GraphicNav Fields:**
+
+ - `href`: link to target, behaves like `<a href>`
 
 **Example:**
 
@@ -101,13 +105,13 @@ These components create the grid-like "album" navigation menu. Each `<GraphicNav
 <GraphicNav>
 
     <!-- item 1 -->
-    <GraphicNavItem>
-        <a href="path/to/target1"><img src="path/to/image1"></a>
+    <GraphicNavItem href="path/to/target1">
+        <img src="path/to/image1">
     </GraphivNavItem>
 
     <!-- item 2 -->
-    <GraphicNavItem>
-        <a href="path/to/target2"><img src="path/to/image2"></a>
+    <GraphicNavItem href="path/to/target2">
+        <img src="path/to/image2">
     </GraphivNavItem>
 
 </GraphicNav>

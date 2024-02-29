@@ -50,11 +50,11 @@
     <Column>
         <h2>Nav</h2>
         <GraphicNav>
-            <GraphicNavItem><p>One</p></GraphicNavItem>
-            <GraphicNavItem><p>Two</p></GraphicNavItem>
-            <GraphicNavItem><img src="{base}/images/butters.jpeg" alt="Butters in a circle"></GraphicNavItem>
-            <GraphicNavItem><p>Four</p></GraphicNavItem>
-            <GraphicNavItem><p>Five</p></GraphicNavItem>
+            <GraphicNavItem href="{base}/about">About</GraphicNavItem>
+            <GraphicNavItem href="{base}/freshman">Freshman</GraphicNavItem>
+            <GraphicNavItem href="{base}/sophomore"><img src="{base}/images/butters.jpeg" alt="Butters in a circle"></GraphicNavItem>
+            <GraphicNavItem href="{base}/junior">Junior</GraphicNavItem>
+            <GraphicNavItem href="{base}/senior">Senior</GraphicNavItem>
         </GraphicNav>
     </Column>
 </ColumnContainer>
