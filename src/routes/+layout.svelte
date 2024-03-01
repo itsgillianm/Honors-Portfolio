@@ -2,6 +2,8 @@
     import { base } from "$app/paths";
     import Navbar from "components/Navbar.svelte";
     import NavbarItem from "components/NavbarItem.svelte";
+
+    export const BACKGROUND_IMAGE_URL = "";
 </script>
 
 <Navbar title="portfolio">
@@ -11,18 +13,32 @@
     <NavbarItem href="{base}/junior">Junior</NavbarItem>
     <NavbarItem href="{base}/senior">Senior</NavbarItem>
 </Navbar>
-<main>
-    <slot />
-</main>
+
+<div
+    id="background"
+    style={BACKGROUND_IMAGE_URL && `background-image:url(${BACKGROUND_IMAGE_URL})`}
+>
+    <main>
+        <slot />
+    </main>
+</div>
 
 <style lang="scss">
     @import "../global.scss";
 
+    #background {
+        // background-image set inline so $base can be used
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        width: 100%;
+        flex: 1;
+    }
+
     main {
-        min-height: 100%;
-        margin: 0;
         width: 65vw;
-        margin-top: 3em;
+        margin: 0 auto;
+        padding-top: 3em;
     }
 
     @media screen and (max-width: $screen-width-small) {
