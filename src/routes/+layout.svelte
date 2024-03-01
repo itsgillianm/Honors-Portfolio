@@ -29,7 +29,7 @@
     @import "../global.scss";
 
     #background {
-        background-image:url("");
+        // see global.css for background image options
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;

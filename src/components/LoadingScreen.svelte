@@ -30,7 +30,7 @@
         on:click={clearLoading}
         role="presentation"
     >
-        <div id="loading-inner" />
+        <div id="loading-inner" class="bg-record" />
     </div>
 </div>
 
@@ -83,7 +83,7 @@
             position: fixed;
             left: calc(-#{$size});
             top: calc(50% - (#{$size} / 2));
-            background-image: url("./images/retro_record.png");
+            // background-image set by class
             background-size: cover;
             background-position: center;
 
