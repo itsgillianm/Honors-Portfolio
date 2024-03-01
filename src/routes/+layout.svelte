@@ -40,7 +40,7 @@
     main {
         width: 65vw;
         margin: 0 auto;
-        padding-top: 3rem;
+        padding: 3rem 0 2rem;
     }
 
     @media screen and (max-width: $screen-width-small) {

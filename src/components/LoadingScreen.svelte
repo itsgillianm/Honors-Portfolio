@@ -1,11 +1,11 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    
+
     // time until loading screen disappears
     // DURATION_MS >= $start-delay + $mid-delay
     const DURATION_MS = 1800;
     let loadingTimeout: number | null = -1; // nonnull so done is not set
-    
+
     // visible externally
     export let done: boolean;
     $: done = (loadingTimeout === null);
@@ -44,14 +44,14 @@
         $trans-time: calc(
             (var(--duration) - #{$start-delay} - #{$mid-delay}) / 2
         );
-    
+
         #loading-screen {
             $loading-screen-color: var(--color-secondary-dark);
-    
+
             @keyframes screen-fade {
                 to {background-color: rgba($loading-screen-color, 0);}
             }
-    
+
             // styles
             z-index: 1;
             position: fixed;
@@ -60,23 +60,23 @@
             $delay: calc(var(--duration) - #{$trans-time});
             animation: screen-fade $trans-time ease $delay forwards;
         }
-    
+
         #loading-inner {
-            $size: 10rem;            
+            $size: 10rem;
 
             @keyframes spin {
                 from {transform: rotate(0deg);}
                 to   {transform: rotate(360deg);}
             }
-    
+
             @keyframes loading-enter {
                 to   {left: calc(50% - (#{$size} / 2));}
             }
-    
+
             @keyframes loading-exit {
                 to   {left: 100%;}
             }
-    
+
             // styles
             width: $size;
             height: $size;

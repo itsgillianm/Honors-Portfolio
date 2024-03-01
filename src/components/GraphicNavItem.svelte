@@ -18,7 +18,7 @@
         overflow: hidden;
         display: flex;
         border-radius: 100%;
-        
+
         // stolen from https://spin.atomicobject.com/css-responsive-square/
         &:after {
             content: "";

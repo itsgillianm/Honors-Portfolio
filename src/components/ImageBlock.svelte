@@ -20,7 +20,7 @@
             clear: both;
             display: table;
         }
-        
+
         .inner {
             margin: 0.5rem;
             :global(img) {

@@ -53,7 +53,7 @@
 
     @media screen and (max-width: $screen-width-small) {
         .title-container {
-            margin-bottom: 1.6rem;    
+            margin-bottom: 1.6rem;
         }
     }
 </style>

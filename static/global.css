@@ -10,7 +10,7 @@ body {
     --color-secondary-light: rgb(255, 211, 234);
     --color-secondary: rgb(255, 144, 179);
     --color-secondary-dark: rgb(239, 122, 133);
-    /* other global colors */ 
+    /* other global colors */
     --color-light: white;
     --color-dark: black;
     /* derivative colors */
