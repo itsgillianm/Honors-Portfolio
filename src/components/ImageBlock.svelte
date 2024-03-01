@@ -7,6 +7,7 @@
         <h2>{title}</h2>
     {/if}
     <div class="inner">
+        <!-- img class options: left, right, page-title -->
         <slot />
     </div>
 </div>
@@ -21,23 +22,29 @@
         }
         
         .inner {
-            margin: 0.5em;
+            margin: 0.5rem;
             :global(img) {
-                margin-bottom: 0.5em;
+                margin-bottom: 1rem;
                 object-fit: cover;
                 width: 25%;
-                min-width: 9em;
+                min-width: 9rem;
                 aspect-ratio: 1 / 1;
             }
 
             :global(img.left) {
                 float: left;
-                margin-right: 1em;
+                margin-right: 1rem;
             }
 
             :global(img.right) {
                 float: right;
-                margin-left: 1em;
+                margin-left: 1rem;
+            }
+
+            :global(img.page-title) {
+                width: 45%;
+                aspect-ratio: 4/3;
+                margin-right: 1.6rem;
             }
 
             :global(ul) {

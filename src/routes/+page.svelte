@@ -4,7 +4,6 @@
     import ColumnContainer from "components/ColumnContainer.svelte";
     import GraphicNav from "components/GraphicNav.svelte";
     import GraphicNavItem from "components/GraphicNavItem.svelte";
-    import ImageBlock from "components/ImageBlock.svelte";
     import Title from "components/Title.svelte";
 </script>
 
@@ -12,49 +11,21 @@
 
 <hr>
 
-<ImageBlock title="Body 1">
-    <img src="{base}/images/butters.jpeg" class="left" alt="Butters in body text">
-    <p class="first-letter">Some body paragraph text.</p>
-    <p>
-        Paragraph break to demonstrate block-ness. If that's the correct term.
-        Which it's definitely not.
-    </p>
-    <p>
-        I'm gonna ramble with some line breaks to test the behavior
-        <br/>
-        with
-        <br/>
-        lots
-        <br/>
-        of
-        <br/>
-        lines.
-    </p>
-    <p>
-        Alrighty, we should be nearing the bottom of the image soon.
-    </p>
-    <p>Aaaaaand there we go.</p>
-</ImageBlock>
-
-<ImageBlock>
-    <p>Another body, but without an image.</p>
-</ImageBlock>
-
 <ColumnContainer>
     <Column>
-        <ImageBlock>
-            <img src="{base}/images/butters.jpeg" class="left" alt="Butters to the left">
-            <p>Block of text in a column.</p>
-        </ImageBlock>
+        <h2>Learning Statement</h2>
+        <p>“I want to be great or nothing,”
+            <br>&emsp;- Amy March</p>
+        <p>Alanis Morisette sings, “swallow it down, that jagged little pill,” off her song You Learn. If I had to categorize my undergraduate experience, it would be that entire album, all based around that one line. My life is centered around music. When I have hard days, or good days, or any days, I end up back at there. Listening to it, creating it, experiencing it. Understanding my college years as albums can help paint the experiences I went through as a Husky from 2020-2024.</p>
     </Column>
     <Column>
-        <h2>Nav</h2>
+        <h2>Navigation</h2>
         <GraphicNav>
-            <GraphicNavItem href="{base}/about">About</GraphicNavItem>
-            <GraphicNavItem href="{base}/freshman">Freshman</GraphicNavItem>
-            <GraphicNavItem href="{base}/sophomore"><img src="{base}/images/butters.jpeg" alt="Butters in a circle"></GraphicNavItem>
-            <GraphicNavItem href="{base}/junior">Junior</GraphicNavItem>
-            <GraphicNavItem href="{base}/senior">Senior</GraphicNavItem>
+            <GraphicNavItem href={`${base}/about`}>About</GraphicNavItem>
+            <GraphicNavItem href={`${base}/freshman`}>Freshman</GraphicNavItem>
+            <GraphicNavItem href={`${base}/sophomore`}>Sophomore</GraphicNavItem>
+            <GraphicNavItem href={`${base}/junior`}>Junior</GraphicNavItem>
+            <GraphicNavItem href={`${base}/senior`}>Senior</GraphicNavItem>
         </GraphicNav>
     </Column>
 </ColumnContainer>

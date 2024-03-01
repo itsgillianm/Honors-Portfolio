@@ -17,7 +17,7 @@
     .navbar-item {
         a {
             height: 100%;
-            padding: 0 0.5em;
+            padding: 0 1.1rem;
             display: flex;
             justify-content: center;
             align-items: center;

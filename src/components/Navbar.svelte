@@ -30,12 +30,11 @@
         top: 0;
         width: 100%;
         height: $navbar-height;
-        font-size: 1.3em;
         background-color: var(--color-primary);
         
         .inner {
             height: 100%;
-            margin: 0 1em;
+            margin: 0 1.5rem;
             display: flex;
             flex-direction: row;
             align-items: center;

@@ -62,7 +62,7 @@
         }
     
         #loading-inner {
-            $size: 10em;            
+            $size: 10rem;            
 
             @keyframes spin {
                 from {transform: rotate(0deg);}

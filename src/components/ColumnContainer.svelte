@@ -8,7 +8,7 @@
     .column-container {
         display: flex;
         flex-direction: row;
-        gap: 4em;
+        gap: 3.4rem;
 
         @media screen and (max-width: $screen-width-small) {
             flex-direction: column;

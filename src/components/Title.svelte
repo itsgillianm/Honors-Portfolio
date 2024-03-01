@@ -17,11 +17,13 @@
 </div>
 
 <style lang="scss">
+    @import "../global.scss";
+
     .title-container {
         display: flex;
         flex-direction: row;
         padding: 10% 6%;
-        margin-bottom: 2em;
+        margin-bottom: 2.4rem;
         border: 2px solid var(--color-secondary-dark);
     }
 
@@ -30,12 +32,28 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 1rem;
         flex-grow: 1;
+
+        h1, h2 {
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+        }
     }
 
     img {
         width: 50%;
         aspect-ratio: 4 / 3;
         object-fit: cover;
+    }
+
+    @media screen and (max-width: $screen-width-small) {
+        .title-container {
+            margin-bottom: 1.6rem;    
+        }
     }
 </style>

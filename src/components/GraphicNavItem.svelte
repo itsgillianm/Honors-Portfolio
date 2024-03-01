@@ -14,7 +14,7 @@
     .graphic-nav-item {
         width: 100%;
         height: 100%;
-        max-width: 12em;
+        // max-width: 12rem;
         overflow: hidden;
         display: flex;
         border-radius: 100%;
