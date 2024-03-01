@@ -119,16 +119,29 @@ These components create the grid-like "album" navigation menu. Each `<GraphicNav
 
 #### `<Navbar>` and `<NavbarItem>`
 
-Similar to the `<GraphicNav>` but displays a navbar at the top of the page. The single instance of `<Navbar>` should be placed in `+layout.svelte` so it appears on every page. To add an item on the right side of the navbar, add a `<NavbarItem>` with the following fields:
+Similar to the `<GraphicNav>` but displays a navbar at the top of the page. The single instance of `<Navbar>` should be placed in `+layout.svelte` so it appears on every page. To add an item on the right side of the navbar, add a `<NavbarItem>` with the following fields, and place text inside the `NavbarItem` tag:
 
 **NavbarItem Fields:**
 
- - `text`: text to display
  - `href`: link to target
+
+**Example:**
+
+```html
+<Navbar>
+
+    <!-- item 1 -->
+    <NavbarItem href="path/to/target1">Target 1</NavbarItem>
+
+    <!-- item 2 -->
+    <NavbarItem href="path/to/target2">Target 2</NavbarItem>
+
+</Navbar>
+```
 
 ### HTML Tips
 
-The most common HTLM components are likely the header, paragraph, and image tags (`<h1>...<h6>`, `<p>`, `<img>`).
+The most common HTML components are likely the header, paragraph, and image tags (`<h1>...<h6>`, `<p>`, `<img>`).
 
 Another useful element is the horizontal line tag (`<hr>`). This will create a horizontal line divider across the page or column.
 

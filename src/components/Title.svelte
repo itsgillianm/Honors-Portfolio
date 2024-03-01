@@ -22,7 +22,7 @@
         flex-direction: row;
         padding: 10% 6%;
         margin-bottom: 2em;
-        border: 1px solid red;
+        border: 2px solid var(--color-secondary-dark);
     }
 
     .text-container {

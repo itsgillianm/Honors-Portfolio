@@ -1,1 +1,10 @@
 $screen-width-small: 768px;
+
+@mixin alt-link {
+    text-decoration: none;
+    color: var(--color-light);
+
+    &:hover {
+        color: var(--color-secondary);
+    }
+}

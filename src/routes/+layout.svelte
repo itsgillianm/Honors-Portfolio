@@ -5,11 +5,11 @@
 </script>
 
 <Navbar title="portfolio">
-    <NavbarItem text="About" href="{base}/about" />
-    <NavbarItem text="Freshman" href="{base}/freshman" />
-    <NavbarItem text="Sophomore" href="{base}/sophomore" />
-    <NavbarItem text="Junior" href="{base}/junior" />
-    <NavbarItem text="Senior" href="{base}/senior" />
+    <NavbarItem href="{base}/about">About</NavbarItem>
+    <NavbarItem href="{base}/freshman">Freshman</NavbarItem>
+    <NavbarItem href="{base}/sophomore">Sophomore</NavbarItem>
+    <NavbarItem href="{base}/junior">Junior</NavbarItem>
+    <NavbarItem href="{base}/senior">Senior</NavbarItem>
 </Navbar>
 <main>
     <slot />
