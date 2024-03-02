@@ -21,11 +21,21 @@
     <Column>
         <h2>Navigation</h2>
         <GraphicNav>
-            <GraphicNavItem href="{base}/about">About</GraphicNavItem>
-            <GraphicNavItem href="{base}/freshman">Freshman</GraphicNavItem>
-            <GraphicNavItem href="{base}/sophomore">Sophomore</GraphicNavItem>
-            <GraphicNavItem href="{base}/junior">Junior</GraphicNavItem>
-            <GraphicNavItem href="{base}/senior">Senior</GraphicNavItem>
+            <GraphicNavItem href="{base}/about">
+                <img src="{base}/images/record_about.png" alt="about">
+            </GraphicNavItem>
+            <GraphicNavItem href="{base}/freshman">
+                <img src="{base}/images/record_freshman.png" alt="freshman">
+            </GraphicNavItem>
+            <GraphicNavItem href="{base}/sophomore">
+                <img src="{base}/images/record_sophomore.png" alt="sophomore">
+            </GraphicNavItem>
+            <GraphicNavItem href="{base}/junior">
+                <img src="{base}/images/record_junior.png" alt="junior">
+            </GraphicNavItem>
+            <GraphicNavItem href="{base}/senior">
+                <img src="{base}/images/record_senior.png" alt="senior">
+            </GraphicNavItem>
         </GraphicNav>
     </Column>
 </ColumnContainer>

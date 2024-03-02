@@ -2,6 +2,7 @@
     import { base } from "$app/paths";
     import classNames from "classnames";
     import NavbarItem from "./NavbarItem.svelte";
+    import { navigating } from "$app/stores";
 
     export let title: string;
 
@@ -11,26 +12,29 @@
     // narrow screen
     let dropdownOpen = false;
     // close if screen widens
-    $: if (narrow) dropdownOpen = false;
+    $: if (narrow || $navigating) dropdownOpen = false;
+
 
     let toggleDropdown = () => dropdownOpen = !dropdownOpen;
 </script>
 
+<svelte:body on:load={() => console.log("loaded!")} />
+
 <!-- block element so the page is pushed down the correct amount -->
 <div id="navbar-spacer">
-    <div id="navbar" bind:clientWidth={width} class={classNames({narrow})}>
+    <div id="navbar" bind:clientWidth={width} class={classNames({narrow, 'dropdown-open': dropdownOpen})}>
+        <a href="{base}/" class="title">{title}</a>
         {#if narrow}
             <!-- dropdown menu for narrow screens -->
-            <div class={classNames('dropdown', {'open': dropdownOpen})}>
-                <button type="button" on:click={toggleDropdown}>
-                    <div class="menu-icon">
-                        <div class="burger-top" />
-                        <div class="burger-bottom" />
-                    </div>
-                </button>
+            <button type="button" on:click={toggleDropdown}>
+                <div class="menu-icon">
+                    <div class="burger-top" />
+                    <div class="burger-bottom" />
+                </div>
+            </button>
+            <div class="dropdown">
                 <div class="menu">
                     <ul>
-                        <NavbarItem href="{base}/">{title}</NavbarItem>
                         <slot />
                     </ul>
                 </div>
@@ -38,7 +42,6 @@
         {:else}
             <!-- full width navbar -->
             <div class="inner">
-                <a href="{base}/" class="title">{title}</a>
                 <ul>
                     <slot />
                 </ul>
@@ -62,6 +65,8 @@
         top: 0;
         width: 100%;
         height: $navbar-height;
+        display: flex;
+        flex-direction: row;
         background-color: var(--color-primary);
 
         ul {
@@ -73,6 +78,8 @@
         a.title {
             color: var(--color-light);
             height: 100%;
+            margin-left: 1.5rem;
+            margin-right: auto;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -85,7 +92,6 @@
     #navbar:not(.narrow) {
         .inner {
             height: 100%;
-            margin: 0 1.5rem;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -101,55 +107,90 @@
 
     // narrow screen, dropdown
     #navbar.narrow {
-        .dropdown {
+        button {
+            height: $navbar-height;
+            width: $navbar-height;
+            flex-shrink: 0;
+            background: none;
+            border: none;
+            padding: none;
+            align-self: flex-end;
+            padding-right: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        $icon-size: 2rem;
+        $line-width: calc(#{$icon-size} * 0.08);
+        $line-gap: calc(#{$icon-size} * 0.4);
+        .menu-icon {
+            width: $icon-size;
+            height: $icon-size;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
-            height: 100%; // height of navbar
-            transition: height 400ms ease;
-            
-            button {
-                height: $navbar-height;
-                width: $navbar-height;
-                flex-shrink: 0;
-                background: none;
-                border: none;
-                padding: none;
-                align-self: flex-end;
-                padding-right: 1.5rem;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+            justify-content: center;
+            gap: $line-gap;
 
-                .menu-icon {
-                    $icon-size: 2rem;
-                    width: $icon-size;
-                    height: $icon-size;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: calc(#{$icon-size} * 0.3);
-
-                    div {
-                        width: 100%;
-                        height: calc(#{$icon-size} * 0.08);
-                        background-color: var(--color-light);
-                    }
-                }
-            }
-            
-            .menu {
+            div {
                 width: 100%;
-                flex-grow: 1;
-                background-color: var(--color-primary);
-
-                :global(li) {
-                    padding: 0.7rem 0;
+                height: 0;
+                transition: transform 100ms ease;
+                
+                &::after {
+                    content: "";
+                    display: block;
+                    transform: translateY(-50%);
+                    height: $line-width;
+                    width: 100%;
+                    background-color: var(--color-light);
                 }
             }
+        }
 
-            &.open {
-                height: 100lvh;
+        &.dropdown-open .menu-icon {
+            .burger-top {
+                transform:
+                    translateY(calc(#{$line-gap} / 2))
+                    rotate(45deg)
+                ;
+            }
+
+            .burger-bottom {
+                transform:
+                    translateY(calc(#{$line-gap} / -2))
+                    rotate(-45deg)
+                ;
+            }
+        }
+
+        .dropdown {
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            padding-top: $navbar-height;
+            height: 0; // height of navbar
+            display: flex;
+            flex-direction: column;
+            transition: height 400ms ease;
+            pointer-events: none;
+
+            * {
+                pointer-events: auto;
+            }
+        }
+
+        &.dropdown-open .dropdown {
+            height: 100lvh;
+        }
+
+        .menu {
+            width: 100%;
+            flex-grow: 1;
+            background-color: var(--color-primary);
+
+            :global(a) {
+                padding: 0.7rem 0;
             }
         }
     }
