@@ -21,11 +21,11 @@
     <Column>
         <h2>Navigation</h2>
         <GraphicNav>
-            <GraphicNavItem href={`${base}/about`}>About</GraphicNavItem>
-            <GraphicNavItem href={`${base}/freshman`}>Freshman</GraphicNavItem>
-            <GraphicNavItem href={`${base}/sophomore`}>Sophomore</GraphicNavItem>
-            <GraphicNavItem href={`${base}/junior`}>Junior</GraphicNavItem>
-            <GraphicNavItem href={`${base}/senior`}>Senior</GraphicNavItem>
+            <GraphicNavItem href="{base}/about">About</GraphicNavItem>
+            <GraphicNavItem href="{base}/freshman">Freshman</GraphicNavItem>
+            <GraphicNavItem href="{base}/sophomore">Sophomore</GraphicNavItem>
+            <GraphicNavItem href="{base}/junior">Junior</GraphicNavItem>
+            <GraphicNavItem href="{base}/senior">Senior</GraphicNavItem>
         </GraphicNav>
     </Column>
 </ColumnContainer>

@@ -24,7 +24,7 @@
     }
 </script>
 
-<div id="loading-wrapper" style={`--duration:${DURATION_MS}ms`}>
+<div id="loading-wrapper" style="--duration:{DURATION_MS}ms">
     <div
         id="loading-screen"
         on:click={clearLoading}

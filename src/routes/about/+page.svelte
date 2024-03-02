@@ -6,7 +6,7 @@
 
 <ColumnContainer>
     <Column>
-        <img src={`${base}/images/butters.jpeg`} alt="profile">
+        <img src="{base}/images/butters.jpeg" alt="profile">
     </Column>
     <Column>
         <h2>About</h2>

@@ -7,21 +7,10 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
-
-        // stolen from https://css-tricks.com/an-auto-filling-css-grid-with-max-columns/
-        --grid-layout-gap: 2rem;
-        --grid-max-columns: 2;
-        --grid-item--min-width: 10rem;
-
-        --gap-count: calc(var(--grid-max-columns) - 1);
-        --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
-        --grid-item--max-width: calc((100% - var(--total-gap-width)) / var(--grid-max-columns));
-
         display: grid;
         max-width: 28rem;
-        // grid-template-columns: repeat(auto-fill, minmax(max(var(--grid-item--min-width), var(--grid-item--max-width)), 1fr));
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: var(--grid-layout-gap);
+        grid-gap: 2rem;
         justify-items: center;
         align-items: center;
     }

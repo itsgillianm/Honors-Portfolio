@@ -30,10 +30,10 @@
     .text-container {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
         gap: 1rem;
         flex-grow: 1;
+        text-align: center;
 
         h1, h2 {
             margin: 0;
@@ -54,6 +54,14 @@
     @media screen and (max-width: $screen-width-small) {
         .title-container {
             margin-bottom: 1.6rem;
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 2rem;
+            padding: 6%;
+        }
+
+        img {
+            width: 100%;
         }
     }
 </style>
