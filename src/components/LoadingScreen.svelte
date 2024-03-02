@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from "$app/paths";
     import { onMount } from "svelte";
 
     // time until loading screen disappears
@@ -30,7 +31,9 @@
         on:click={clearLoading}
         role="presentation"
     >
-        <div id="loading-inner" class="bg-record" />
+        <div id="loading-inner">
+            <img src="{base}/images/retro_record.png" alt="record">
+        </div>
     </div>
 </div>
 
@@ -62,7 +65,7 @@
         }
 
         #loading-inner {
-            $size: 10rem;
+            $size: 11rem;
 
             @keyframes spin {
                 from {transform: rotate(0deg);}
@@ -70,10 +73,12 @@
             }
 
             @keyframes loading-enter {
+                from {left: calc(-#{$size});}
                 to   {left: calc(50% - (#{$size} / 2));}
             }
 
             @keyframes loading-exit {
+                from {left: calc(50% - (#{$size} / 2));}
                 to   {left: 100%;}
             }
 
@@ -83,16 +88,21 @@
             position: fixed;
             left: calc(-#{$size});
             top: calc(50% - (#{$size} / 2));
-            // background-image set by class
-            background-size: cover;
-            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
             $exit-delay: calc(#{$start-delay} + #{$trans-time} + #{$mid-delay});
             animation:
                 spin 1s linear infinite,
                 loading-enter $trans-time ease-out $start-delay forwards,
-                loading-exit $trans-time ease-in $exit-delay forwards
+                // shorter exit time because it appears slow to the eye
+                loading-exit calc(#{$trans-time} - 150ms) ease-in $exit-delay forwards
             ;
+
+            img {
+                width: 100%;
+            }
         }
     }
 </style>
