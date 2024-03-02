@@ -88,12 +88,6 @@ hr {
 
 /* static assets */
 
-/* set urls for images here to the paths work */
-
-.bg-record {
-    background-image: url("images/retro_record.png");
-}
-
 /* fonts */
 
 @font-face {
