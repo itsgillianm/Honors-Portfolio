@@ -1,10 +1,6 @@
 <script lang="ts">
-    import { base } from "$app/paths";
     import classNames from "classnames";
-    import NavbarItem from "./NavbarItem.svelte";
     import { navigating } from "$app/stores";
-
-    export let title: string;
 
     let width: number;
     $: narrow = width <= 768;
@@ -23,7 +19,6 @@
 <!-- block element so the page is pushed down the correct amount -->
 <div id="navbar-spacer">
     <div id="navbar" bind:clientWidth={width} class={classNames({narrow, 'dropdown-open': dropdownOpen})}>
-        <a href="{base}/" class="title">{title}</a>
         {#if narrow}
             <!-- dropdown menu for narrow screens -->
             <button type="button" on:click={toggleDropdown}>
@@ -51,7 +46,7 @@
 </div>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     $navbar-height: 4rem;
 
@@ -67,24 +62,13 @@
         height: $navbar-height;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         background-color: var(--color-primary);
 
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-        }
-
-        a.title {
-            color: var(--color-light);
-            height: 100%;
-            margin-left: 1.5rem;
-            margin-right: auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-    
-            @include alt-link;
         }
     }
 

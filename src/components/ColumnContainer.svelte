@@ -3,7 +3,7 @@
 </div>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     .column-container {
         display: flex;

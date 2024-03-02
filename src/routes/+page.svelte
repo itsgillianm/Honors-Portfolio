@@ -7,19 +7,19 @@
     import Title from "components/Title.svelte";
 </script>
 
-<Title title="home page" subtitle="home subtitle" imgSrc="{base}/images/butters.jpeg" />
+<Title title="gillian mcmahon" subtitle="honors portfolio" imgSrc="{base}/images/butters.jpeg" />
 
 <hr>
 
 <ColumnContainer>
     <Column>
-        <h2>Learning Statement</h2>
+        <h2>welcome to downpour records</h2>
         <p>“I want to be great or nothing,”
             <br>&emsp;- Amy March</p>
         <p>Alanis Morisette sings, “swallow it down, that jagged little pill,” off her song You Learn. If I had to categorize my undergraduate experience, it would be that entire album, all based around that one line. My life is centered around music. When I have hard days, or good days, or any days, I end up back at there. Listening to it, creating it, experiencing it. Understanding my college years as albums can help paint the experiences I went through as a Husky from 2020-2024.</p>
     </Column>
     <Column>
-        <h2>Navigation</h2>
+        <h2>navigation</h2>
         <GraphicNav>
             <GraphicNavItem href="{base}/about">
                 <img src="{base}/images/record_about.png" alt="about">

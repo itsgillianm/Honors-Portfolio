@@ -34,7 +34,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         I started off my school year by flying abroad to Paris! I went with the CIEE Open Block Program, which allowed me to collaborate with students from other schools rather than a UW program. This program also only lasted 2/3 of the quarter rather than a whole quarter. Fortunately, my boyfriend also went with me, so I wasn't totally alone. The majority of the students lived in tiny apartments in Montrouge, and I had a roommate named Michelle, who was from Pennsylvania. I took two classes abroad (which accounts for about 12 credits) and got to know pretty much everyone in the program. My closest friend abroad is Sofia, who fortunately goes to Seattle University, so I get to see her in the States as well!
@@ -70,7 +70,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         Winter 2023 was my first quarter back from abroad, and I had to adjust accordingly. I really enjoyed the classes I was in though, and made lots of time for my friends that I had missed during autumn. My favorite class by far was Criminology. I have always had an interest in Criminology, and if UW had offered that as a major I would've declared that. I even considered enrolling in the FBI for a time. Still, I enjoyed Criminology and loved Ann Frost as a professor. I ended up getting 100% in the class! Goes to show that if you're passionate about the subject, you'll do well. I also took an honors class on Women in Greek and Roman Antiquity. I love everything greek myth, and I was interested in to learn about women's roles. I also made some good friends in the class, and had lots of fun learning about the Greeks and Romans.
@@ -100,7 +100,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         This was a successful quarter for me, where I felt like I made a lot of progress and was happy about the work I accomplished. I did acting, music, school, etc. The classes I was in were fascinating, and I made a lot of great connections. I took a Sociology of Race class and met a girl named Shyal, who's been in many of my classes. We hit it off, which is one of the first times I've made a friend in a class and not in a club. I spent lots of time with APO people doing community service and fellowship events, which is always a good feeling. I liked being able to work on my acting; I spent every week improving my audition skills and learning to dissect a script. I even got an acting teacher (which is a crazy story).

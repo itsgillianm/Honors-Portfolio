@@ -34,7 +34,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
 		In my first quarter at college, I had many questions about what to do and how to act in my new environment. The first couple of weeks were particularly hard, as I missed my family and wasn't used to being on my own. Having suffered from anxiety and depression my whole life, I struggled and frequently ended up in my car, wondering if I should go home. After having my Mom visit after two weeks, I started to feel a lot better. She and I talked, and when she left, I felt much more prepared. I began to try and challenge myself to do more than sitting around in my dorm all day. I made meal plans and tried to cook once a week for my roommate and boyfriend, which was exciting but overall satisfying (I made a lot of pasta). I created a cleaning schedule so my dorm didn't become a mess. My favorite was every Wednesday; I would go to Tea Republik on the Ave and study for two hours with my boyfriend (by study, I mean that he helped me with math homework the whole time).
@@ -69,7 +69,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
 		My second quarter in college tested my mental health in ways I haven't experienced before. My classes were challenging, and I descended into a pit of depression. I found myself feeling suicidal, and I rarely hung out with friends or left my dorm. I cried every night, and bringing myself to go to class felt exhausting because I didn't have any hope that I'd succeed. I eventually went home a week before spring break to recalibrate. I started seeing a new therapist. I was rediagnosed with major depressive disorder, obsessive-compulsive disorder, and general anxiety disorder. In addition, I was also diagnosed with ADHD.
@@ -107,7 +107,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
 		My third quarter in college made the end of my freshman year memorable. I pulled myself out of the pit of depression before and managed to find the good things in life again. I took classes I enjoyed, had experiences with friends, and ultimately felt sad when I left my dorms to move back home. I started seeing a new therapist in Seattle who helped me, and I got put on different meds and medication specifically for anxiety. My roommate started experiencing the same depression I felt the previous quarter, though, and it broke my heart to watch her fall into that pit I was so familiar with. I tried to support her the best I could, just like she supported me. I am grateful she was my roommate because, in return, she became one of my best friends.

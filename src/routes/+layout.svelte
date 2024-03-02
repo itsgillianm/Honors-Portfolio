@@ -11,7 +11,8 @@
     <LoadingScreen bind:done={loadingDone} />
 {/if}
 
-<Navbar title="portfolio">
+<Navbar>
+    <NavbarItem href="{base}/">Home</NavbarItem>
     <NavbarItem href="{base}/about">About</NavbarItem>
     <NavbarItem href="{base}/freshman">Freshman</NavbarItem>
     <NavbarItem href="{base}/sophomore">Sophomore</NavbarItem>
@@ -26,7 +27,7 @@
 </div>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     #background {
         // see global.css for background image options

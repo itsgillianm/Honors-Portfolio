@@ -38,6 +38,8 @@
 </div>
 
 <style lang="scss">
+    @import "@styles/global.scss";
+
     #loading-wrapper {
         // time to wait until entering
         $start-delay: 200ms;
@@ -66,11 +68,6 @@
 
         #loading-inner {
             $size: 11rem;
-
-            @keyframes spin {
-                from {transform: rotate(0deg);}
-                to   {transform: rotate(360deg);}
-            }
 
             @keyframes loading-enter {
                 from {left: calc(-#{$size});}

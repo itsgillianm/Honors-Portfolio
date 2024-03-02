@@ -17,12 +17,13 @@
 </div>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     .title-container {
         display: flex;
         flex-direction: row;
-        padding: 10% 6%;
+        gap: 3rem;
+        padding: 10% 3rem;
         margin-bottom: 2.4rem;
         border: 2px solid var(--color-secondary-dark);
     }
@@ -31,7 +32,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.2rem;
         flex-grow: 1;
         text-align: center;
 
@@ -40,8 +41,9 @@
         }
 
         h2 {
-            font-size: 1.6rem;
-            text-transform: uppercase;
+            font-size: 1.5rem;
+            font-family: var(--fontfamily-body);
+            font-weight: normal;
         }
     }
 
@@ -58,6 +60,7 @@
             align-items: center;
             gap: 2rem;
             padding: 6%;
+            padding-bottom: 12%;
         }
 
         img {

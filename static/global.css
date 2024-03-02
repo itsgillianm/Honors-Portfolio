@@ -16,6 +16,9 @@ body {
     /* derivative colors */
     --color-background: var(--color-light);
     --color-text: var(--color-dark);
+    /* text styles */
+    --fontfamily-body: "Kollektif", Arial, Helvetica, sans-serif;
+    --fontfamily-head: "Violense", "Kollektif", Arial, Helvetica, sans-serif;
 
     /* other global styles */
     min-height: 100%;
@@ -23,8 +26,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-
-    font-family: "Kollektif", Arial, Helvetica, sans-serif;
+    font-family: var(--fontfamily-body);
 }
 
 * {
@@ -53,7 +55,7 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Violense";
+    font-family: var(--fontfamily-head);
 }
 
 h1 {
@@ -68,7 +70,6 @@ h2 {
 
 h3 {
     font-size: 1.6rem;
-    text-transform: uppercase;
 }
 
 ul {

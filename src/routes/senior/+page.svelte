@@ -35,7 +35,7 @@
 	</p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         I went into my last autumn quarter really excited for all the work to occur. I thought my classes sounded interesting, I was president of my fraternity, and my band was doing okay. Unfortunately, it ended up being a really hard time for me mentally. One thing about me, is I have a very dry sarcastic sense of humor. One of the people in my fraternity was offended by that sense of humor, and we ended up having a falling out (I tried to apologize, but she wouldn’t accept that). It escalated to me being reported to the board for my behavior. Eventually, no one wanted work with me anymore and started essentially bullying me. I sent in my resignation, letting them know that I felt bullied, and didn’t return since. 

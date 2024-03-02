@@ -12,18 +12,19 @@
 </li>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     .navbar-item {
         a {
+            @include alt-link;
+
             height: 100%;
             padding: 0 1.4rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: var(--color-light);
-
-            @include alt-link;
+            font-family: var(--fontfamily-head);
+            font-size: 1.2em;
         }
 
         &.active {

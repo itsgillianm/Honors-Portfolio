@@ -35,7 +35,7 @@
     </p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         The Fall Quarter of 2022 was one of the most exciting by far. I loved being on campus and establishing a routine while making new friends and finding new passions. I kept busy, and there was never a dull moment in what I was doing. It allowed me to think about myself in ways I hadn't before, and I like to think I grew as a person during this time in my life. For starters, figuring out I didn't want to be a STEM major was a big moment. I remember crying over Chemistry while visiting home and talking about the experience with my Mom. She asked me if I wanted to pursue STEM, and I had to think about it. The truth was-- I didn't-- but I had convinced myself of the idea that if I was not doing STEM, then I'm not smart. I've been surrounded by friends my whole life who have gone on to pursue careers in engineering and physics, and they always seemed wise to me. If I went into the humanities, I would never be as good as them. My Mom reminded me of all the people I thought were brilliant pursuing careers in journalism and psychology, these paths that I just never really considered. I ended up calling my friend Lauren about it, and she's the one who recommended the major of Sociology. I started the switch to it by the end of the year.
@@ -65,7 +65,7 @@
     </p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         If Acting dominated my mind during autumn, it was music that became a part of me during winter. I spent most nights working on my original music for Sound of 2022 and practicing with my band. I found most musicians through the Songwriters Club on campus, although a few were just personal friends. I had wanted the band to amp back up again during 2021, but it was hard to find people who were committed to the cause. Sound Off gave me all the opportunity I needed. The performance was rushed, and the number of people who came to see me almost made me cry. I loved performing my original songs with my bandmates, and it's an experience I won't forget.
@@ -99,7 +99,7 @@
     </p>
     <br style="clear:both" />
 
-    <h3>Reflection</h3>
+    <h3>REFLECTION</h3>
 
     <p>
         The Spring quarter ended on an upbeat note. I finally finished my sociology requirements, so I could apply to my new major, got elected as PR/Marketing Chair of Alpha Phi Omega, and had a lot of fun hangouts with friends. Unfortunately, I also lost some friendships that hurt me in the long run.

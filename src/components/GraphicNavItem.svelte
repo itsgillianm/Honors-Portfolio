@@ -9,17 +9,20 @@
 </li>
 
 <style lang="scss">
-    @import "../global.scss";
+    @import "@styles/global.scss";
 
     .graphic-nav-item {
         width: 100%;
         height: 100%;
-        // max-width: 12rem;
         overflow: hidden;
         display: flex;
         border-radius: 100%;
 
-        // stolen from https://spin.atomicobject.com/css-responsive-square/
+        &:hover {
+            animation: spin 3.5s linear infinite;
+        }
+
+        // stolen from https://spin.atomicobject.com/css-responsive-square/ to make square
         &:after {
             content: "";
             display: block;
