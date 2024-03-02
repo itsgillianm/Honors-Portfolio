@@ -1,4 +1,8 @@
-<div class="column">
+<script lang="ts">
+    export let style: string | undefined = undefined;
+</script>
+
+<div class="column" style={style}>
     <slot />
 </div>
 

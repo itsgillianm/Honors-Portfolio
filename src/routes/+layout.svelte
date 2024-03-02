@@ -1,8 +1,8 @@
 <script lang="ts">
     import { base } from "$app/paths";
-    import Navbar from "components/Navbar.svelte";
-    import NavbarItem from "components/NavbarItem.svelte";
-    import LoadingScreen from "components/LoadingScreen.svelte";
+    import Navbar from "$components/Navbar.svelte";
+    import NavbarItem from "$components/NavbarItem.svelte";
+    import LoadingScreen from "$components/LoadingScreen.svelte";
 
     let loadingDone: boolean;
 </script>

@@ -8,11 +8,11 @@
     <div class="text-container">
         <h1>{title}</h1>
         {#if subtitle}
-            <h2>{subtitle}</h2>
+            <h2 class="subtitle">{subtitle}</h2>
         {/if}
     </div>
     {#if imgSrc}
-        <img src={imgSrc} alt={imgSrc}>
+        <img src={imgSrc} alt="front page">
     {/if}
 </div>
 
@@ -23,7 +23,7 @@
         display: flex;
         flex-direction: row;
         gap: 3rem;
-        padding: 10% 3rem;
+        padding: 3rem;
         margin-bottom: 2.4rem;
         border: 2px solid var(--color-secondary-dark);
     }
@@ -42,14 +42,13 @@
 
         h2 {
             font-size: 1.5rem;
-            font-family: var(--fontfamily-body);
-            font-weight: normal;
+            // font-family: var(--fontfamily-body);
+            // font-weight: normal;
         }
     }
 
     img {
         width: 50%;
-        aspect-ratio: 4 / 3;
         object-fit: cover;
     }
 

@@ -16,7 +16,7 @@ const config = {
             base: process.env.NODE_ENV === 'production' ? '/Honors-Portfolio' : '',
         },
 		alias: {
-			'components': './src/components'
+			'$components': './src/components'
 		}
 	}
 };

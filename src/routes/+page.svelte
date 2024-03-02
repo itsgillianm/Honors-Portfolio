@@ -1,13 +1,13 @@
 <script lang="ts">
     import { base } from "$app/paths";
-    import Column from "components/Column.svelte";
-    import ColumnContainer from "components/ColumnContainer.svelte";
-    import GraphicNav from "components/GraphicNav.svelte";
-    import GraphicNavItem from "components/GraphicNavItem.svelte";
-    import Title from "components/Title.svelte";
+    import Column from "$components/Column.svelte";
+    import ColumnContainer from "$components/ColumnContainer.svelte";
+    import GraphicNav from "$components/GraphicNav.svelte";
+    import GraphicNavItem from "$components/GraphicNavItem.svelte";
+    import Title from "$components/Title.svelte";
 </script>
 
-<Title title="gillian mcmahon" subtitle="honors portfolio" imgSrc="{base}/images/butters.jpeg" />
+<Title title="gillian mcmahon" subtitle="honors portfolio" imgSrc="{base}/images/headers/front.png" />
 
 <hr>
 
@@ -22,19 +22,19 @@
         <h2>navigation</h2>
         <GraphicNav>
             <GraphicNavItem href="{base}/about">
-                <img src="{base}/images/record_about.png" alt="about">
+                <img src="{base}/images/nav/record_about.png" alt="about">
             </GraphicNavItem>
             <GraphicNavItem href="{base}/freshman">
-                <img src="{base}/images/record_freshman.png" alt="freshman">
+                <img src="{base}/images/nav/record_freshman.png" alt="freshman">
             </GraphicNavItem>
             <GraphicNavItem href="{base}/sophomore">
-                <img src="{base}/images/record_sophomore.png" alt="sophomore">
+                <img src="{base}/images/nav/record_sophomore.png" alt="sophomore">
             </GraphicNavItem>
             <GraphicNavItem href="{base}/junior">
-                <img src="{base}/images/record_junior.png" alt="junior">
+                <img src="{base}/images/nav/record_junior.png" alt="junior">
             </GraphicNavItem>
             <GraphicNavItem href="{base}/senior">
-                <img src="{base}/images/record_senior.png" alt="senior">
+                <img src="{base}/images/nav/record_senior.png" alt="senior">
             </GraphicNavItem>
         </GraphicNav>
     </Column>

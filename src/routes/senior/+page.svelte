@@ -1,22 +1,17 @@
 <script lang="ts">
     import { base } from "$app/paths";
-    import ImageBlock from "components/ImageBlock.svelte";
-    import ColumnContainer from "components/ColumnContainer.svelte";
-    import Column from "components/Column.svelte";
+    import ImageBlock from "$components/ImageBlock.svelte";
+    import PageHeader from "$components/PageHeader.svelte";
 </script>
 
-<ColumnContainer>
-    <Column>
-        <img src="{base}/images/butters.jpeg" alt="butters page title">
-    </Column>
-    <Column>
-        <h1>Reputation</h1>
-        <h2>Senior Year</h2>
-    </Column>
-</ColumnContainer>
+<PageHeader
+    title="Reputation"
+    subtitle="Senior Year"
+    imgSrc="{base}/images/headers/reputation.png"
+    imgAlt="senior - reputation"
+/>
 
 <hr>
-
 
 <ImageBlock title="Autumn 2023">
     <img src="{base}/images/butters.jpeg" alt="zone one song" class="left">

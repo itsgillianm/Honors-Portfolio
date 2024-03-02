@@ -68,6 +68,11 @@ h2 {
     margin: 0.8rem 0;
 }
 
+.subtitle {
+    font-family: var(--fontfamily-body);
+    font-weight: normal;
+}
+
 h3 {
     font-size: 1.6rem;
 }

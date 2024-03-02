@@ -1,12 +1,12 @@
 <script>
-    import ColumnContainer from "components/ColumnContainer.svelte";
-    import Column from "components/Column.svelte";
+    import ColumnContainer from "$components/ColumnContainer.svelte";
+    import Column from "$components/Column.svelte";
     import { base } from "$app/paths";
 </script>
 
 <ColumnContainer>
     <Column>
-        <img src="{base}/images/butters.jpeg" alt="profile">
+        <img src="{base}/images/headers/about.png" alt="about">
     </Column>
     <Column>
         <h2>About</h2>

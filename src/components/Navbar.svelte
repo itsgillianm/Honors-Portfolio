@@ -10,7 +10,6 @@
     // close if screen widens
     $: if (narrow || $navigating) dropdownOpen = false;
 
-
     let toggleDropdown = () => dropdownOpen = !dropdownOpen;
 </script>
 
@@ -48,7 +47,7 @@
 <style lang="scss">
     @import "@styles/global.scss";
 
-    $navbar-height: 4rem;
+    $navbar-height: 3.5rem;
 
     #navbar-spacer {
         width: 100%;
@@ -91,63 +90,6 @@
 
     // narrow screen, dropdown
     #navbar.narrow {
-        button {
-            height: $navbar-height;
-            width: $navbar-height;
-            flex-shrink: 0;
-            background: none;
-            border: none;
-            padding: none;
-            align-self: flex-end;
-            padding-right: 1.5rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        $icon-size: 2rem;
-        $line-width: calc(#{$icon-size} * 0.08);
-        $line-gap: calc(#{$icon-size} * 0.4);
-        .menu-icon {
-            width: $icon-size;
-            height: $icon-size;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: $line-gap;
-
-            div {
-                width: 100%;
-                height: 0;
-                transition: transform 100ms ease;
-                
-                &::after {
-                    content: "";
-                    display: block;
-                    transform: translateY(-50%);
-                    height: $line-width;
-                    width: 100%;
-                    background-color: var(--color-light);
-                }
-            }
-        }
-
-        &.dropdown-open .menu-icon {
-            .burger-top {
-                transform:
-                    translateY(calc(#{$line-gap} / 2))
-                    rotate(45deg)
-                ;
-            }
-
-            .burger-bottom {
-                transform:
-                    translateY(calc(#{$line-gap} / -2))
-                    rotate(-45deg)
-                ;
-            }
-        }
-
         .dropdown {
             overflow: hidden;
             position: absolute;
@@ -175,6 +117,61 @@
 
             :global(a) {
                 padding: 0.7rem 0;
+            }
+        }
+
+        button {
+            height: $navbar-height;
+            width: $navbar-height;
+            flex-shrink: 0;
+            background: none;
+            border: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        $icon-size: 1.7rem;
+        $line-width: calc(#{$icon-size} * 0.08);
+        $line-gap: calc(#{$icon-size} * 0.4);
+        .menu-icon {
+            width: $icon-size;
+            height: $icon-size;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: $line-gap;
+
+            div {
+                width: 100%;
+                height: 0;
+                transition: transform 100ms ease;
+
+                &::after {
+                    content: "";
+                    display: block;
+                    transform: translateY(-50%);
+                    height: $line-width;
+                    width: 100%;
+                    background-color: var(--color-light);
+                }
+            }
+        }
+
+        &.dropdown-open .menu-icon {
+            .burger-top {
+                transform:
+                    translateY(calc(#{$line-gap} / 2))
+                    rotate(45deg)
+                ;
+            }
+
+            .burger-bottom {
+                transform:
+                    translateY(calc(#{$line-gap} / -2))
+                    rotate(-45deg)
+                ;
             }
         }
     }
