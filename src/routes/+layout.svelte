@@ -3,9 +3,12 @@
     import Navbar from "$components/Navbar.svelte";
     import NavbarItem from "$components/NavbarItem.svelte";
     import LoadingScreen from "$components/LoadingScreen.svelte";
+    import { screenWidth } from "$lib/stores";
 
     let loadingDone: boolean;
 </script>
+
+<svelte:window bind:innerWidth={$screenWidth} />
 
 {#if !loadingDone}
     <LoadingScreen bind:done={loadingDone} />
@@ -45,7 +48,7 @@
         padding: 3rem 0 2rem;
     }
 
-    @media screen and (max-width: $screen-width-small) {
+    @media screen and (max-width: $screen-width-narrow) {
         main {
             width: auto;
             padding: 2rem 1rem;

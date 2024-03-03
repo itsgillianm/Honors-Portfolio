@@ -1,9 +1,10 @@
 <script lang="ts">
     import classNames from "classnames";
     import { navigating } from "$app/stores";
+    import { SCREEN_WIDTH_NARROW } from "$lib/global";
+    import { screenWidth } from "$lib/stores";
 
-    let width: number;
-    $: narrow = width <= 768;
+    $: narrow = $screenWidth <= SCREEN_WIDTH_NARROW;
 
     // narrow screen
     let dropdownOpen = false;
@@ -17,7 +18,7 @@
 
 <!-- block element so the page is pushed down the correct amount -->
 <div id="navbar-spacer">
-    <div id="navbar" bind:clientWidth={width} class={classNames({narrow, 'dropdown-open': dropdownOpen})}>
+    <div id="navbar" class={classNames({narrow, 'dropdown-open': dropdownOpen})}>
         {#if narrow}
             <!-- dropdown menu for narrow screens -->
             <button type="button" on:click={toggleDropdown}>

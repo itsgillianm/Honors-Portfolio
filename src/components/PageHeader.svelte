@@ -12,7 +12,7 @@
     <Column>
         <img src={imgSrc} alt={imgAlt}>
     </Column>
-    <Column style="display:flex; flex-direction:column; justify-content:center;">
+    <Column vCenter={true}>
         <h1>{title}</h1>
         {#if subtitle}
             <h2>{subtitle}</h2>

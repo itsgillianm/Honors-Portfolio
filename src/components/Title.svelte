@@ -52,7 +52,7 @@
         object-fit: cover;
     }
 
-    @media screen and (max-width: $screen-width-small) {
+    @media screen and (max-width: $screen-width-narrow) {
         .title-container {
             margin-bottom: 1.6rem;
             flex-direction: column-reverse;

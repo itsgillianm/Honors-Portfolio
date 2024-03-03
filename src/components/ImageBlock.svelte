@@ -13,6 +13,7 @@
 </div>
 
 <style lang="scss">
+    @import "@styles/global.scss";
     .image-block-container {
         // clearfix hack to stop floating image overflow
         &::after {
@@ -26,10 +27,15 @@
             :global(img) {
                 margin-bottom: 1rem;
                 object-fit: cover;
-                width: 25%;
+                width: 35%;
                 min-width: 9rem;
-                aspect-ratio: 1 / 1;
+
+
+                @media screen and (max-width: $screen-width-narrow) {
+                    width: 100%;
+                }
             }
+
 
             :global(img.left) {
                 float: left;

@@ -8,11 +8,11 @@
     .column-container {
         display: flex;
         flex-direction: row;
-        gap: 3.4rem;
+        gap: 3rem;
 
-        @media screen and (max-width: $screen-width-small) {
+        @media screen and (max-width: $screen-width-narrow) {
             flex-direction: column;
-            gap: 0;
+            gap: 2rem;
         }
     }
 </style>
