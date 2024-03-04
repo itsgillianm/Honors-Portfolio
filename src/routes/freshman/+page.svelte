@@ -2,8 +2,6 @@
     import { base } from "$app/paths";
     import PageHeader from "$components/PageHeader.svelte";
     import PageBlock from "$components/PageBlock.svelte";
-
-    const spacer = `<div style="margin-top:3rem" />`
 </script>
 
 <PageHeader
@@ -16,7 +14,14 @@
 <hr>
 
 <!-- #region au20 -->
-<h2>Autumn 2020</h2>
+<h2>autumn 2020 &mdash; <q>ceilings</q></h2>
+
+<ul class="class-schedule">
+    <li>math 120</li>
+    <li>ling 234</li>
+    <li>honors 100</li>
+    <li>honors 394</li>
+</ul>
 
 <PageBlock first="img">
     <img slot="img" src="{base}/images/freshman/au/queendom.jpg" alt="au20 queendom">
@@ -26,14 +31,14 @@
 </PageBlock>
 
 <PageBlock first="text">
-    <img slot="img" src="{base}/images/freshman/au/moon_cafe.png" alt="au20 disappearing moon cafe" class="right">
+    <img slot="img" src="{base}/images/freshman/au/moon_cafe.png" alt="au20 disappearing moon cafe">
     <p slot="text">
         For my Honors class, Lovework, this quarter we had to read a choice book and analyze it's themes of love. My group chose "Disappearing Moon Cafe" by Sky Lee, which followed the woes of a Chinese Family in Canada through the generations. This assignment helped me to think critically with a piece of fiction and develop better analyzation skills. It also helped me think more critically about love and the ways that families show it.
     </p>
 </PageBlock>
 
 <PageBlock first="img">
-    <img slot="img" src="{base}/images/freshman/au/apo_pledge.png" alt="au20 APO pledge invitation" class="left">
+    <img slot="img" src="{base}/images/freshman/au/apo_pledge.png" alt="au20 APO pledge invitation">
     <p slot="text">
         This quarter I joined Alpha Phi Omega which is an international co-ed service fraternity. I had to attend several classes this quarter to learn more about the fraternity and I recently passed the test and became a full blown member. Part of my initiation meant performing minimum three hours of community service, which I fulfilled by writing letters to elders in senior homes. this community that I've discovered in APO has helped me find a place within the college.
     </p>
@@ -58,23 +63,31 @@
 <hr>
 
 <!-- #region wi21 -->
-<h2>Winter 2021</h2>
+<h2>winter 2021 &mdash; <q>doomsday</q></h2>
 
-<PageBlock>
+<ul class="class-schedule">
+    <li>chem 142</li>
+    <li>ess 100</li>
+    <li>math 124</li>
+    <li>art 272</li>
+</ul>
+
+<PageBlock first="text">
+    <iframe slot="img" src="https://www.youtube.com/embed/cY9pkalRV8U?si=gBcXtP6ZWL35hTi2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <p slot="text">
         For my art class, our final project took the form of a visual diary. I decided to make a documentary film describing my depression during the winter quarter. It touched on some personal topics for me, but I think it's the best way to visualize my mental health for the winter quarter.
     </p>
 </PageBlock>
 
 <PageBlock first="img">
-    <img slot="img" src="{base}/images/freshman/wi/chem142.png" alt="wi21 chem 142 grades" class="right">
+    <img slot="img" src="{base}/images/freshman/wi/chem142.png" alt="wi21 chem 142 grades">
     <p slot="text">
         This is an area I struggled during the quarter, and the source of much of my depression. Chemistry was really hard and despite my work, I barely pulled through with a 2.5 GPA. I attended every office hour, met with my TA on a regular basis, paid for extra tutoring, and spent hours after classes hitting the books and trying to understand the content. Most days afterwards I found myself crying in my desk from the frustration of it all.
     </p>
 </PageBlock>
 
 <PageBlock first="text">
-    <img slot="img" src="{base}/images/freshman/wi/math124.png" alt="wi21 math 124 grades" class="left">
+    <img slot="img" src="{base}/images/freshman/wi/math124.png" alt="wi21 math 124 grades">
     <p slot="text">
         I also struggled in Calculus during this quarter. I did tutoring for this class as well as got help outside to try and understand what was going on. The difference though is I managed to pull through with a 3.1 GPA which is much higher than I was expecting. I was really proud of myself. I managed to get this grade despite being unable to finish any of the final exams on time due to the short time constraint.
     </p>
@@ -102,24 +115,30 @@
 <hr>
 
 <!-- #region sp21 -->
-<h2>Spring 2021</h2>
+<h2>spring 2021 &mdash; <q>orange show speedway</q></h2>
+
+<ul class="class-schedule">
+    <li>math 125</li>
+    <li>engl 282</li>
+    <li>honors 212</li>
+</ul>
 
 <PageBlock first="img">
-    <img slot="img" src="{base}/images/freshman/sp/seattle_musicians.jpg" alt="sp21 seattle musicians article" class="left">
+    <img slot="img" src="{base}/images/freshman/sp/seattle_musicians.jpg" alt="sp21 seattle musicians article">
     <p slot="text">
         This was my favorite project of my first year of college. I took English 282 with Sarah Ghasedi and had the opportunity to make an autoethnography. I decided to focus on Seattle Female Musicians since that's a group I'm apart of. I researched through various academic outlets as well as memoirs penned by famous musicians and ultimately created this zine to highlight my research. My professor told me that my project was the best in the class and asked me to submit it for the Library Research Award since she thought I had a good chance of getting it.
     </p>
 </PageBlock>
 
 <PageBlock first="text">
-    <img slot="img" src="{base}/images/freshman/sp/cozy_art.png" alt="sp21 cozy grove art" class="right">
+    <img slot="img" src="{base}/images/freshman/sp/cozy_art.png" alt="sp21 cozy grove art">
     <p slot="text">
         I took another class from Jeanette Bushnell this quarter who became my favorite professor thus far. Her class was on Creation Stories and one of our assignments was creating a comment telling a specific story. I decided to create a comic highlighting a story in a video game I play, Cozy Grove, where you play a spirit scout who has to help these bear spirits move on from life. This was the cover of my comic, and it is one of my favorite pieces. I hadn't done a digital painting before, so it allowed me to explore a different medium while creating something I was proud of.
     </p>
 </PageBlock>
 
 <PageBlock first="img">
-    <img slot="img" src="{base}/images/freshman/sp/math125.png" alt="sp21 math 125 grades" class="left">
+    <img slot="img" src="{base}/images/freshman/sp/math125.png" alt="sp21 math 125 grades">
     <p slot="text">
         Last quarter I really struggled in Calculus, so when I took it again this quarter I wanted it to play out differently than before. I continued with tutoring and studying, but this time I actually started to understand the subject. I also tried watching more video explanations on YouTube, and I managed to pull through with a 3.6 GPA which was much better than I did before. I was really proud of myself.
     </p>
@@ -140,3 +159,7 @@
     The Spring quarter allowed me to look forward to summer plans. I got a job working at Ulta Beauty that would start when I get home. I have made plans with my band to write more music and play more shows. I also signed up for a digital art class that will improve my line work and character design. I want to focus on my passions and myself while I'm at home to return to school ready to engage with others again. I thank this past quarter for allowing me time to reflect so that when I return in autumn, I'm more ready than ever.
 </p>
 <!-- endregion sp21 -->
+
+<style lang="scss">
+    @import "@styles/page.scss";
+</style>

@@ -1,18 +1,18 @@
 <script>
-    import ColumnContainer from "$components/ColumnContainer.svelte";
-    import Column from "$components/Column.svelte";
+    import SectionContainer from "$components/SectionContainer.svelte";
+    import Section from "$components/Section.svelte";
     import { base } from "$app/paths";
 </script>
 
-<ColumnContainer>
-    <Column>
+<SectionContainer>
+    <Section>
         <img src="{base}/images/headers/about.png" alt="about">
-    </Column>
-    <Column>
+    </Section>
+    <Section>
         <h2>About</h2>
         <p>Hi! My name is Gillian, and I’m a 22-year-old living in Seattle, WA. I was raised in Portland, OR with my parents and my cats. While at the University of Washington, I studied Sociology with a minor in Acting. I’m heading to Columbia Publishing afterwards in hopes of working in book publishing. While on campus, I have been a staff writer for the Daily and was formally apart of Alpha Phi Omega. In my free time, you can find me with my cat, Butters, napping, or singing and songwriting in my band, the Sleepy Haunts.</p>
-    </Column>
-</ColumnContainer>
+    </Section>
+</SectionContainer>
 
 <hr>
 

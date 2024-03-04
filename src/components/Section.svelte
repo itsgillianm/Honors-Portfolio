@@ -6,7 +6,7 @@
 </script>
 
 <div
-    class={classNames("column", {"v-center": vCenter})}
+    class={classNames('column', {'v-center': vCenter})}
     style="--width-factor:{widthFactor}"
 >
     <slot />
