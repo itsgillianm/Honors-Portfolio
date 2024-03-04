@@ -17,16 +17,10 @@
         overflow: hidden;
         display: flex;
         border-radius: 100%;
+        aspect-ratio: 1 / 1;
 
         &:hover {
             animation: spin 3.5s linear infinite;
-        }
-
-        // stolen from https://spin.atomicobject.com/css-responsive-square/ to make square
-        &:after {
-            content: "";
-            display: block;
-            padding-bottom: 100%;
         }
 
         a {
