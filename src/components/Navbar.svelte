@@ -114,7 +114,7 @@
         .menu {
             width: 100%;
             flex-grow: 1;
-            background-color: var(--color-primary);
+            background-color: var(--color-primary-dark);
 
             :global(a) {
                 padding: 0.7rem 0;
