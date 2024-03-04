@@ -63,7 +63,7 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
-        background-color: var(--color-primary);
+        background-color: var(--color-primary-dark);
 
         ul {
             list-style-type: none;

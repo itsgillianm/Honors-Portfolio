@@ -4,12 +4,12 @@ html {
 
 body {
     /* theme colors */
-    --color-primary: rgb(110, 68, 255);
-    --color-primary-dark: rgb(58, 33, 146);
-    --color-primary-light: rgb(184, 146, 255);
-    --color-secondary-light: rgb(255, 211, 234);
-    --color-secondary: rgb(255, 144, 179);
-    --color-secondary-dark: rgb(239, 122, 133);
+    --color-primary: #89ACAE;
+    --color-primary-dark: #486E71;
+    --color-primary-light: #ccf0f2;
+    --color-secondary: #A53860;
+    --color-secondary-dark: #6f243f;
+    --color-secondary-light: #F8AD62;
     /* other global colors */
     --color-light: white;
     --color-dark: black;
